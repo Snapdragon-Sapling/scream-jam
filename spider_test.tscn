@@ -1,0 +1,110 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpsvf7tjuv40n"]
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_5u2dt"]
+target_nodepath = NodePath("../../../IK targets/leg_target")
+tip_nodepath = NodePath("leg_upper_bone/leg_mid_bone/leg_lower_bone/foot_bone")
+ccdik_data_chain_length = 3
+joint_data/0/bone_index = 0
+joint_data/0/bone2d_node = NodePath("leg_upper_bone")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = 70.82
+joint_data/0/constraint_angle_max = 265.254
+joint_data/0/constraint_angle_invert = true
+joint_data/0/constraint_in_localspace = true
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 1
+joint_data/1/bone2d_node = NodePath("leg_upper_bone/leg_mid_bone")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = -262.316
+joint_data/1/constraint_angle_max = 360.0
+joint_data/1/constraint_angle_invert = true
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+joint_data/2/bone_index = 2
+joint_data/2/bone2d_node = NodePath("leg_upper_bone/leg_mid_bone/leg_lower_bone")
+joint_data/2/rotate_from_joint = false
+joint_data/2/enable_constraint = true
+joint_data/2/constraint_angle_min = 8.888
+joint_data/2/constraint_angle_max = 80.0
+joint_data/2/constraint_angle_invert = false
+joint_data/2/constraint_in_localspace = true
+joint_data/2/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_o8bef"]
+enabled = true
+modification_count = 1
+modifications/0 = SubResource("SkeletonModification2DCCDIK_5u2dt")
+
+[node name="leg" type="Node2D"]
+
+[node name="Character" type="Node2D" parent="."]
+
+[node name="Body" type="Node2D" parent="Character"]
+
+[node name="leg_upper" type="Polygon2D" parent="Character/Body"]
+rotation = 0.12187
+scale = Vector2(1, 1)
+color = Color(0, 0, 0, 1)
+offset = Vector2(-1, 1)
+polygon = PackedVector2Array(-2, 13, -12, 5, -13, -9, -4, -16, 7, -16, 14, -10, 72, -10, 82, -16, 96, -16, 101, -9, 102, 5, 96, 10, 84, 10, 73, 6, 16, 7, 8, 13)
+
+[node name="leg_mid" type="Polygon2D" parent="Character/Body"]
+position = Vector2(90.5682, 9.07753)
+rotation = 0.12187
+scale = Vector2(1, 1)
+color = Color(0, 0, 0, 1)
+offset = Vector2(-0.813942, 1.51925)
+polygon = PackedVector2Array(-2, 13, -12, 5, -13, -9, -4, -16, 7, -16, 14, -10, 48.5563, -12.6879, 80.3845, -12.6879, 96, -16, 101.915, -10.4542, 103.788, -2.07407, 102, 5, 96, 10, 85.0651, 9.6494, 58.8537, 6.29881, 16, 7, 8, 13)
+
+[node name="leg_lower" type="Polygon2D" parent="Character/Body"]
+position = Vector2(189.077, 19.1276)
+rotation = 0.276995
+color = Color(0, 0, 0, 1)
+offset = Vector2(-1.93613, 2.11687)
+polygon = PackedVector2Array(-2.74448, 9.05179, -8.36124, 2.3506, -9.29736, -7.70119, -2.74449, -14.4024, 6.61676, -14.4024, 14, -10, 48.7424, -13.2855, 85.2512, -9.93493, 117.079, 1.23373, 132.057, 16.8699, 111.463, 9.05179, 86.1873, 6.81806, 58.1036, 3.46746, 16, 7, 6.61676, 10.1687)
+
+[node name="Bones" type="Node2D" parent="Character"]
+
+[node name="Skeleton2D" type="Skeleton2D" parent="Character/Bones"]
+modification_stack = SubResource("SkeletonModificationStack2D_o8bef")
+
+[node name="leg_upper_bone" type="Bone2D" parent="Character/Bones/Skeleton2D"]
+rest = Transform2D(0.999516, -0.031118, 0.031118, 0.999516, 0, 0)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Character/Bones/Skeleton2D/leg_upper_bone"]
+remote_path = NodePath("../../../../Body/leg_upper")
+
+[node name="leg_mid_bone" type="Bone2D" parent="Character/Bones/Skeleton2D/leg_upper_bone"]
+position = Vector2(91, -2)
+rest = Transform2D(1, 1.74846e-07, -1.74846e-07, 1, 91.0012, -1.99996)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Character/Bones/Skeleton2D/leg_upper_bone/leg_mid_bone"]
+remote_path = NodePath("../../../../../Body/leg_mid")
+
+[node name="leg_lower_bone" type="Bone2D" parent="Character/Bones/Skeleton2D/leg_upper_bone/leg_mid_bone"]
+position = Vector2(99, -2)
+rest = Transform2D(0.987992, 0.154503, -0.154503, 0.987992, 98.9988, -2.00003)
+auto_calculate_length_and_angle = false
+length = 130.784
+bone_angle = 6.75
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Character/Bones/Skeleton2D/leg_upper_bone/leg_mid_bone/leg_lower_bone"]
+remote_path = NodePath("../../../../../../Body/leg_lower")
+
+[node name="foot_bone" type="Bone2D" parent="Character/Bones/Skeleton2D/leg_upper_bone/leg_mid_bone/leg_lower_bone"]
+position = Vector2(129, 18)
+scale = Vector2(0.999998, 0.999998)
+rest = Transform2D(0.999998, 0, 0, 0.999998, 129, 18)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = 0.0
+
+[node name="IK targets" type="Node2D" parent="."]
+
+[node name="leg_target" type="Node2D" parent="IK targets"]
+position = Vector2(404, 94)

@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3ddaofihuvhq"]
+
+[ext_resource type="PackedScene" uid="uid://cpsvf7tjuv40n" path="res://spider_test.tscn" id="1_efaq0"]
+[ext_resource type="Script" path="res://leg_target.gd" id="2_gmcak"]
+
+[node name="leg" instance=ExtResource("1_efaq0")]
+position = Vector2(405, 248)
+
+[node name="leg_upper" parent="Character/Body" index="0"]
+rotation = 0.0891468
+scale = Vector2(0.999993, 0.999993)
+
+[node name="leg_mid" parent="Character/Body" index="1"]
+position = Vector2(90.8183, 6.10892)
+rotation = 0.128467
+scale = Vector2(0.999994, 0.999994)
+
+[node name="leg_lower" parent="Character/Body" index="2"]
+position = Vector2(189.26, 16.8091)
+rotation = 0.458078
+scale = Vector2(0.999995, 0.999995)
+
+[node name="leg_target" parent="IK targets" index="0"]
+position = Vector2(297, 90)
+script = ExtResource("2_gmcak")

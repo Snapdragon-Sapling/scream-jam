@@ -1,0 +1,441 @@
+[gd_scene load_steps=11 format=3 uid="uid://d1kestm51fpoa"]
+
+[ext_resource type="Texture2D" uid="uid://jwql3f1tdwlw" path="res://icon.svg" id="1_5ainy"]
+[ext_resource type="Script" path="res://leg_target.gd" id="2_rx6m7"]
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_uxjgh"]
+target_nodepath = NodePath("../../../../IK_targets/LegTarget1")
+tip_nodepath = NodePath("LegUpper/LegMid/LegLower/LegTip")
+ccdik_data_chain_length = 3
+joint_data/0/bone_index = 0
+joint_data/0/bone2d_node = NodePath("LegUpper")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = -90.0
+joint_data/0/constraint_angle_max = 90.0
+joint_data/0/constraint_angle_invert = true
+joint_data/0/constraint_in_localspace = true
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 1
+joint_data/1/bone2d_node = NodePath("LegUpper/LegMid")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = 0.0
+joint_data/1/constraint_angle_max = 120.0
+joint_data/1/constraint_angle_invert = false
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+joint_data/2/bone_index = 2
+joint_data/2/bone2d_node = NodePath("LegUpper/LegMid/LegLower")
+joint_data/2/rotate_from_joint = false
+joint_data/2/enable_constraint = true
+joint_data/2/constraint_angle_min = 0.0
+joint_data/2/constraint_angle_max = 90.0
+joint_data/2/constraint_angle_invert = false
+joint_data/2/constraint_in_localspace = true
+joint_data/2/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_u8mgx"]
+enabled = true
+modification_count = 1
+modifications/0 = SubResource("SkeletonModification2DCCDIK_uxjgh")
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_mlvba"]
+target_nodepath = NodePath("../../../../IK_targets/LegTarget2")
+tip_nodepath = NodePath("LegUpper/LegMid/LegLower/LegTip")
+ccdik_data_chain_length = 3
+joint_data/0/bone_index = 0
+joint_data/0/bone2d_node = NodePath("LegUpper")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = -90.0
+joint_data/0/constraint_angle_max = 90.0
+joint_data/0/constraint_angle_invert = true
+joint_data/0/constraint_in_localspace = true
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 1
+joint_data/1/bone2d_node = NodePath("LegUpper/LegMid")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = 0.0
+joint_data/1/constraint_angle_max = 120.0
+joint_data/1/constraint_angle_invert = false
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+joint_data/2/bone_index = 2
+joint_data/2/bone2d_node = NodePath("LegUpper/LegMid/LegLower")
+joint_data/2/rotate_from_joint = false
+joint_data/2/enable_constraint = true
+joint_data/2/constraint_angle_min = 0.0
+joint_data/2/constraint_angle_max = 90.0
+joint_data/2/constraint_angle_invert = false
+joint_data/2/constraint_in_localspace = true
+joint_data/2/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_47icc"]
+enabled = true
+modification_count = 1
+modifications/0 = SubResource("SkeletonModification2DCCDIK_mlvba")
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_f5s34"]
+target_nodepath = NodePath("../../../../IK_targets/LegTarget3")
+tip_nodepath = NodePath("LegUpper/LegMid/LegLower/LegTip")
+ccdik_data_chain_length = 3
+joint_data/0/bone_index = 0
+joint_data/0/bone2d_node = NodePath("LegUpper")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = 90.0
+joint_data/0/constraint_angle_max = -90.0
+joint_data/0/constraint_angle_invert = true
+joint_data/0/constraint_in_localspace = true
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 1
+joint_data/1/bone2d_node = NodePath("LegUpper/LegMid")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = -180.0
+joint_data/1/constraint_angle_max = 60.0
+joint_data/1/constraint_angle_invert = true
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+joint_data/2/bone_index = 2
+joint_data/2/bone2d_node = NodePath("LegUpper/LegMid/LegLower")
+joint_data/2/rotate_from_joint = false
+joint_data/2/enable_constraint = true
+joint_data/2/constraint_angle_min = -180.0
+joint_data/2/constraint_angle_max = 90.0
+joint_data/2/constraint_angle_invert = true
+joint_data/2/constraint_in_localspace = true
+joint_data/2/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_sepr8"]
+enabled = true
+modification_count = 1
+modifications/0 = SubResource("SkeletonModification2DCCDIK_f5s34")
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_q2njq"]
+target_nodepath = NodePath("../../../../IK_targets/LegTarget4")
+tip_nodepath = NodePath("LegUpper/LegMid/LegLower/LegTip")
+ccdik_data_chain_length = 3
+joint_data/0/bone_index = 0
+joint_data/0/bone2d_node = NodePath("LegUpper")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = true
+joint_data/0/constraint_angle_min = 90.0
+joint_data/0/constraint_angle_max = -90.0
+joint_data/0/constraint_angle_invert = true
+joint_data/0/constraint_in_localspace = true
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 1
+joint_data/1/bone2d_node = NodePath("LegUpper/LegMid")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = 0.0
+joint_data/1/constraint_angle_max = -120.0
+joint_data/1/constraint_angle_invert = true
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+joint_data/2/bone_index = 2
+joint_data/2/bone2d_node = NodePath("LegUpper/LegMid/LegLower")
+joint_data/2/rotate_from_joint = false
+joint_data/2/enable_constraint = true
+joint_data/2/constraint_angle_min = 0.0
+joint_data/2/constraint_angle_max = -90.0
+joint_data/2/constraint_angle_invert = true
+joint_data/2/constraint_in_localspace = true
+joint_data/2/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_waphg"]
+enabled = true
+modification_count = 1
+modifications/0 = SubResource("SkeletonModification2DCCDIK_q2njq")
+
+[node name="World" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(568.173, 577.342)
+scale = Vector2(12.1031, 2.66439)
+texture = ExtResource("1_5ainy")
+
+[node name="Hermit" type="Node2D" parent="."]
+position = Vector2(551.854, 386.254)
+scale = Vector2(2.49197, 2.49197)
+
+[node name="Body" type="Node2D" parent="Hermit"]
+script = ExtResource("2_rx6m7")
+
+[node name="Leg1" type="Node2D" parent="Hermit/Body"]
+position = Vector2(11.2361, 2.39187e-08)
+
+[node name="Sprites" type="Node2D" parent="Hermit/Body/Leg1"]
+
+[node name="LegUpper" type="Polygon2D" parent="Hermit/Body/Leg1/Sprites"]
+rotation = -0.651447
+scale = Vector2(1, 1)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-3, 2, -1, 4, 1, 4, 6, 2.66667, 17, 2.66667, 20, 4, 22, 4, 24, 1.33333, 24, -1.33333, 22, -4, 20, -4, 16, -2.66667, 5, -4, 1, -4, -1, -4, -3, -2)
+
+[node name="LegMid" type="Polygon2D" parent="Hermit/Body/Leg1/Sprites"]
+position = Vector2(16.6994, -12.7332)
+rotation = -0.262237
+scale = Vector2(1, 1)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-3, 2, -1, 4, 1, 4, 7, 2.66667, 15, 2.66667, 19, 4, 22, 4, 24, 1.33333, 24, -1.33333, 22, -4, 20, -4, 11, -2.66667, 8, -2.66667, 1, -4, -1, -4, -3, -2)
+
+[node name="LegLower" type="Polygon2D" parent="Hermit/Body/Leg1/Sprites"]
+position = Vector2(36.9814, -18.1773)
+rotation = 1.14213
+scale = Vector2(1, 1)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-3, 2, -1, 4, 1, 4, 5, 2.66667, 9, 2.66667, 20, 1.33333, 31, 1.33333, 29, 0, 26, -1.33333, 20, -2.66667, 12, -2.66667, 8, -2.66667, 1, -4, -1, -4, -3, -2)
+
+[node name="Bones" type="Node2D" parent="Hermit/Body/Leg1"]
+visible = false
+
+[node name="Skeleton2D" type="Skeleton2D" parent="Hermit/Body/Leg1/Bones"]
+modification_stack = SubResource("SkeletonModificationStack2D_u8mgx")
+
+[node name="LegUpper" type="Bone2D" parent="Hermit/Body/Leg1/Bones/Skeleton2D"]
+rest = Transform2D(1, 0, 0, 1, 0, 0)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg1/Bones/Skeleton2D/LegUpper"]
+remote_path = NodePath("../../../../Sprites/LegUpper")
+
+[node name="LegMid" type="Bone2D" parent="Hermit/Body/Leg1/Bones/Skeleton2D/LegUpper"]
+position = Vector2(21, 0)
+rest = Transform2D(1, 0, 0, 1, 21, 0)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg1/Bones/Skeleton2D/LegUpper/LegMid"]
+remote_path = NodePath("../../../../../Sprites/LegMid")
+
+[node name="LegLower" type="Bone2D" parent="Hermit/Body/Leg1/Bones/Skeleton2D/LegUpper/LegMid"]
+position = Vector2(21, 0)
+rest = Transform2D(1, 0, 0, 1, 21, 0)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg1/Bones/Skeleton2D/LegUpper/LegMid/LegLower"]
+remote_path = NodePath("../../../../../../Sprites/LegLower")
+
+[node name="LegTip" type="Bone2D" parent="Hermit/Body/Leg1/Bones/Skeleton2D/LegUpper/LegMid/LegLower"]
+position = Vector2(31, 1)
+rest = Transform2D(1, 0, 0, 1, 31, 1)
+auto_calculate_length_and_angle = false
+length = 1.0
+bone_angle = 0.0
+
+[node name="Leg2" type="Node2D" parent="Hermit/Body"]
+position = Vector2(6.01933, -4.81547)
+
+[node name="Sprites" type="Node2D" parent="Hermit/Body/Leg2"]
+
+[node name="LegUpper" type="Polygon2D" parent="Hermit/Body/Leg2/Sprites"]
+rotation = -0.809464
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-3, 2, -1, 4, 1, 4, 6, 2.66667, 17, 2.66667, 20, 4, 22, 4, 24, 1.33333, 24, -1.33333, 22, -4, 20, -4, 16, -2.66667, 5, -4, 1, -4, -1, -4, -3, -2)
+
+[node name="LegMid" type="Polygon2D" parent="Hermit/Body/Leg2/Sprites"]
+position = Vector2(14.4876, -15.2024)
+rotation = -0.0268774
+scale = Vector2(1, 1)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-3, 2, -1, 4, 1, 4, 7, 2.66667, 15, 2.66667, 19, 4, 22, 4, 24, 1.33333, 24, -1.33333, 22, -4, 20, -4, 11, -2.66667, 8, -2.66667, 1, -4, -1, -4, -3, -2)
+
+[node name="LegLower" type="Polygon2D" parent="Hermit/Body/Leg2/Sprites"]
+position = Vector2(35.48, -15.7666)
+rotation = 1.54392
+scale = Vector2(0.999998, 0.999998)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-3, 2, -1, 4, 1, 4, 5, 2.66667, 9, 2.66667, 20, 1.33333, 31, 1.33333, 29, 0, 26, -1.33333, 20, -2.66667, 12, -2.66667, 8, -2.66667, 1, -4, -1, -4, -3, -2)
+
+[node name="Bones" type="Node2D" parent="Hermit/Body/Leg2"]
+visible = false
+
+[node name="Skeleton2D" type="Skeleton2D" parent="Hermit/Body/Leg2/Bones"]
+modification_stack = SubResource("SkeletonModificationStack2D_47icc")
+
+[node name="LegUpper" type="Bone2D" parent="Hermit/Body/Leg2/Bones/Skeleton2D"]
+rotation = -0.0136979
+scale = Vector2(0.999998, 0.999998)
+rest = Transform2D(1, 0, 0, 1, 0, 0)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg2/Bones/Skeleton2D/LegUpper"]
+remote_path = NodePath("../../../../Sprites/LegUpper")
+
+[node name="LegMid" type="Bone2D" parent="Hermit/Body/Leg2/Bones/Skeleton2D/LegUpper"]
+position = Vector2(21.0001, -3.18736e-05)
+rest = Transform2D(1, 0, 0, 1, 21, 0)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg2/Bones/Skeleton2D/LegUpper/LegMid"]
+remote_path = NodePath("../../../../../Sprites/LegMid")
+
+[node name="LegLower" type="Bone2D" parent="Hermit/Body/Leg2/Bones/Skeleton2D/LegUpper/LegMid"]
+position = Vector2(21, 8.67248e-06)
+scale = Vector2(0.999998, 0.999998)
+rest = Transform2D(1, 0, 0, 1, 21, 0)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg2/Bones/Skeleton2D/LegUpper/LegMid/LegLower"]
+remote_path = NodePath("../../../../../../Sprites/LegLower")
+
+[node name="LegTip" type="Bone2D" parent="Hermit/Body/Leg2/Bones/Skeleton2D/LegUpper/LegMid/LegLower"]
+position = Vector2(31, 1)
+rest = Transform2D(1, 0, 0, 1, 31, 1)
+auto_calculate_length_and_angle = false
+length = 1.0
+bone_angle = 0.0
+
+[node name="Leg3" type="Node2D" parent="Hermit/Body"]
+position = Vector2(-10.6702, -0.179516)
+
+[node name="Sprites" type="Node2D" parent="Hermit/Body/Leg3"]
+
+[node name="LegUpper" type="Polygon2D" parent="Hermit/Body/Leg3/Sprites"]
+rotation = 0.665564
+scale = Vector2(1, 1)
+color = Color(0, 0, 0, 1)
+offset = Vector2(-21.3346, -0.0944777)
+polygon = PackedVector2Array(-3, 2, -1, 4, 1, 4, 4.88921, 2.68641, 12.9712, 2.70686, 20, 4, 22, 4, 24, 1.33333, 24, -1.33333, 22, -4, 20, -4, 15.9089, -4.01032, 5.44223, -2.81661, 1, -4, -1, -4, -3, -2)
+
+[node name="LegMid" type="Polygon2D" parent="Hermit/Body/Leg3/Sprites"]
+position = Vector2(-16.6315, -13.1704)
+rotation = 0.274808
+scale = Vector2(1, 1)
+color = Color(0, 0, 0, 1)
+offset = Vector2(-21.1806, 0.128819)
+polygon = PackedVector2Array(-3, 2, -1, 4, 1, 4, 6.47774, 2.79137, 12.4184, 2.79137, 19, 4, 22, 4, 24, 1.33333, 24, -1.33333, 22, -4, 20, -4, 14.608, -2.7801, 5.94372, -2.7801, 1, -4, -1, -4, -3, -2)
+
+[node name="LegLower" type="Polygon2D" parent="Hermit/Body/Leg3/Sprites"]
+position = Vector2(-36.9558, -18.9007)
+rotation = -1.10851
+scale = Vector2(0.999998, 0.999998)
+color = Color(0, 0, 0, 1)
+offset = Vector2(0.0886002, 0.0531203)
+polygon = PackedVector2Array(-31.8975, 1.23464, -19.6201, 1.26214, -8.73956, 2.46626, -5.02347, 2.46626, -1.47471, 3.70383, 1.03619, 3.70383, 3.12365, 2.00995, 3.11183, -1.78163, 1.43793, -3.98919, -0.872086, -4.02264, -2.89033, -3.57097, -7.25305, -2.8268, -19.7875, -2.78506, -26.885, -1.11267, -30.2365, 0.18079)
+
+[node name="Bones" type="Node2D" parent="Hermit/Body/Leg3"]
+visible = false
+
+[node name="Skeleton2D" type="Skeleton2D" parent="Hermit/Body/Leg3/Bones"]
+modification_stack = SubResource("SkeletonModificationStack2D_sepr8")
+
+[node name="LegUpper" type="Bone2D" parent="Hermit/Body/Leg3/Bones/Skeleton2D"]
+rest = Transform2D(1, 0, 0, 1, 0, 0)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg3/Bones/Skeleton2D/LegUpper"]
+remote_path = NodePath("../../../../Sprites/LegUpper")
+
+[node name="LegMid" type="Bone2D" parent="Hermit/Body/Leg3/Bones/Skeleton2D/LegUpper"]
+position = Vector2(-21.2148, -0.0894444)
+rest = Transform2D(1, 0, 0, 1, -21.2148, -0.0894444)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg3/Bones/Skeleton2D/LegUpper/LegMid"]
+remote_path = NodePath("../../../../../Sprites/LegMid")
+
+[node name="LegLower" type="Bone2D" parent="Hermit/Body/Leg3/Bones/Skeleton2D/LegUpper/LegMid"]
+position = Vector2(-21.1168, 0)
+rest = Transform2D(1, 0, 0, 1, -21.1168, 0)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg3/Bones/Skeleton2D/LegUpper/LegMid/LegLower"]
+remote_path = NodePath("../../../../../../Sprites/LegLower")
+
+[node name="LegTip" type="Bone2D" parent="Hermit/Body/Leg3/Bones/Skeleton2D/LegUpper/LegMid/LegLower"]
+position = Vector2(-31.0262, 1.36821)
+rest = Transform2D(1, 0, 0, 1, -31.0262, 1.36821)
+auto_calculate_length_and_angle = false
+length = 1.0
+bone_angle = -180.0
+
+[node name="Leg4" type="Node2D" parent="Hermit/Body"]
+position = Vector2(-5.84589, -4.41424)
+
+[node name="Sprites" type="Node2D" parent="Hermit/Body/Leg4"]
+
+[node name="LegUpper" type="Polygon2D" parent="Hermit/Body/Leg4/Sprites"]
+rotation = 0.818262
+scale = Vector2(1, 1)
+color = Color(0, 0, 0, 1)
+offset = Vector2(-21.3346, -0.0944777)
+polygon = PackedVector2Array(-3, 2, -1, 4, 1, 4, 4.88921, 2.68641, 12.9712, 2.70686, 20, 4, 22, 4, 24, 1.33333, 24, -1.33333, 22, -4, 20, -4, 15.9089, -4.01032, 5.44223, -2.81661, 1, -4, -1, -4, -3, -2)
+
+[node name="LegMid" type="Polygon2D" parent="Hermit/Body/Leg4/Sprites"]
+position = Vector2(-14.4348, -15.5471)
+rotation = 0.0539651
+scale = Vector2(1, 1)
+color = Color(0, 0, 0, 1)
+offset = Vector2(-21.1806, 0.128819)
+polygon = PackedVector2Array(-3, 2, -1, 4, 1, 4, 6.47774, 2.79137, 12.4184, 2.79137, 19, 4, 22, 4, 24, 1.33333, 24, -1.33333, 22, -4, 20, -4, 14.608, -2.7801, 5.94372, -2.7801, 1, -4, -1, -4, -3, -2)
+
+[node name="LegLower" type="Polygon2D" parent="Hermit/Body/Leg4/Sprites"]
+position = Vector2(-35.5208, -16.6861)
+rotation = -1.51683
+scale = Vector2(1, 1)
+color = Color(0, 0, 0, 1)
+offset = Vector2(0.0886002, 0.0531203)
+polygon = PackedVector2Array(-31.8975, 1.23464, -19.6201, 1.26214, -8.73956, 2.46626, -5.02347, 2.46626, -1.47471, 3.70383, 1.03619, 3.70383, 3.12365, 2.00995, 3.11183, -1.78163, 1.43793, -3.98919, -0.872086, -4.02264, -2.89033, -3.57097, -7.25305, -2.8268, -19.7875, -2.78506, -26.885, -1.11267, -30.2365, 0.18079)
+
+[node name="Bones" type="Node2D" parent="Hermit/Body/Leg4"]
+visible = false
+
+[node name="Skeleton2D" type="Skeleton2D" parent="Hermit/Body/Leg4/Bones"]
+modification_stack = SubResource("SkeletonModificationStack2D_waphg")
+
+[node name="LegUpper" type="Bone2D" parent="Hermit/Body/Leg4/Bones/Skeleton2D"]
+rest = Transform2D(1, 0, 0, 1, 0, 0)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg4/Bones/Skeleton2D/LegUpper"]
+remote_path = NodePath("../../../../Sprites/LegUpper")
+
+[node name="LegMid" type="Bone2D" parent="Hermit/Body/Leg4/Bones/Skeleton2D/LegUpper"]
+position = Vector2(-21.2148, -0.0894444)
+rest = Transform2D(1, 0, 0, 1, -21.2148, -0.0894444)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg4/Bones/Skeleton2D/LegUpper/LegMid"]
+remote_path = NodePath("../../../../../Sprites/LegMid")
+
+[node name="LegLower" type="Bone2D" parent="Hermit/Body/Leg4/Bones/Skeleton2D/LegUpper/LegMid"]
+position = Vector2(-21.1168, 0)
+rest = Transform2D(1, 0, 0, 1, -21.1168, 0)
+metadata/_local_pose_override_enabled_ = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Hermit/Body/Leg4/Bones/Skeleton2D/LegUpper/LegMid/LegLower"]
+remote_path = NodePath("../../../../../../Sprites/LegLower")
+
+[node name="LegTip" type="Bone2D" parent="Hermit/Body/Leg4/Bones/Skeleton2D/LegUpper/LegMid/LegLower"]
+position = Vector2(-31.0262, 1.36821)
+rest = Transform2D(1, 0, 0, 1, -31.0262, 1.36821)
+auto_calculate_length_and_angle = false
+length = 1.0
+bone_angle = -180.0
+
+[node name="Middle" type="Node2D" parent="Hermit/Body"]
+
+[node name="Polygon2D" type="Polygon2D" parent="Hermit/Body/Middle"]
+position = Vector2(-0.0182362, 0.122832)
+scale = Vector2(1.1832, 1.29224)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(5.21676, 5.21676, 9.22965, 4.01289, 12.0387, 2.00644, 13.2425, -1.60516, 12.5642, -4.44256, 10.1901, -6.92686, 6.45939, -9.41115, 2.05035, -10.9638, -2.01953, -10.9638, -6.42857, -9.41115, -9.82014, -6.92686, -12.1942, -4.44256, -12.8412, -1.60516, -11.6374, 1.60516, -8.82836, 4.01289, -4.81547, 5.21676)
+
+[node name="IK_targets" type="Node2D" parent="Hermit"]
+
+[node name="LegTarget1" type="Node2D" parent="Hermit/IK_targets"]
+position = Vector2(60.1933, 10.4335)
+
+[node name="LegTarget2" type="Node2D" parent="Hermit/IK_targets"]
+position = Vector2(41.3328, 10.4335)
+
+[node name="LegTarget3" type="Node2D" parent="Hermit/IK_targets"]
+position = Vector2(-60.2389, 9.29944)
+
+[node name="LegTarget4" type="Node2D" parent="Hermit/IK_targets"]
+position = Vector2(-41.6741, 9.95455)
